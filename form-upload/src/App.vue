@@ -35,7 +35,7 @@
             </div>
             <div v-else>
               <img :src="img" />
-              <button @click="removeImage">Remove image</button>
+              <button @click.prevent="removeImage">Remove image</button>
             </div>
           </div>
           <div class="form-group">
@@ -83,22 +83,22 @@
                   </select>
                 </td>
                 <td>
-                  <div v-if="!img">
+                  <div v-if="!imgEdit">
                     <h2>Select an image</h2>
-                    <input type="file" @change="onFileChange">
+                    <input type="file" @change="onFileChangeE">
                   </div>
                   <div v-else>
-                    <img :src="img" />
-                    <button @click="removeImage">Remove image</button>
+                    <img :src="imgEdit" />
+                    <button @click.prevent="removeImageE">Remove image</button>
                   </div>
                 </td>
                 <td>
-                  <button class="btn-icon" @click="editProduct(product.id)">
+                  <button class="btn-icon" @click.prevent="editProduct(product.id)">
                     <i class="fas fa-check" aria-hidden="true"></i>
                     save
                   </button>
                   /
-                  <button class="btn-icon" @click="cancelEdit(product.id)">
+                  <button class="btn-icon" @click.prevent="cancelEdit(product.id)">
                     <i class="fas fa-times" aria-hidden="true"></i>
                     cancel
                   </button>
@@ -112,17 +112,18 @@
                 <td>
                   <img :src="product.data().image" alt="No image">
                 </td>
-                <td>
-                  <button class="btn-icon" @click="enableEdit(product.id)">
+                <td v-if="!edittedProduct.isEditting">
+                  <button class="btn-icon" @click.prevent="enableEdit(product.id)">
                     <i class="fas fa-edit" aria-hidden="true"></i>
                     edit
                   </button>
                   /
-                  <button class="btn-icon" @click="removeProduct(product.id)">
+                  <button class="btn-icon" @click.prevent="removeProduct(product.id)">
                     <i class="fas fa-trash" aria-hidden="true"></i>
                     delete
                   </button>
                 </td>
+                <td v-else></td>
               </tr>
             </template>
           </tbody>
@@ -163,7 +164,9 @@
       return {
         products: [],
         file: File,
+        fileEdit: File,
         img: '',
+        imgEdit: '',
         newProduct: {
           name: '',
           description: '',
@@ -194,14 +197,33 @@
         };
         reader.readAsDataURL(file)
       },
+      createImageE: function (file) {
+        var image = new Image()
+        var reader = new FileReader()
+        var vm = this;
+
+        reader.onload = (e) => {
+          vm.imgEdit = e.target.result
+        };
+        reader.readAsDataURL(file)
+      },
       removeImage: function (e) {
         this.img = ''
+      },
+      removeImageE: function (e) {
+        this.imgEdit = ''
       },
       onFileChange: function (e) {
         this.file = e.target.files
         if (!this.file.length)
           return
         this.createImage(this.file[0])
+      },
+      onFileChangeE: function (e) {
+        this.fileEdit = e.target.files
+        if (!this.fileEdit.length)
+          return
+        this.createImageE(this.file[0])
       },
       upload: async function (file) {
         const imageRef = storageRef.child(file.name)
@@ -210,7 +232,8 @@
       },
       addProduct: async function () {
         try {
-          this.newProduct.image = await this.upload(this.file[0])
+          if (!this.file[0]) this.newProduct.image = ''
+           else this.newProduct.image = await this.upload(this.file[0])
           await productCollectionRef.add(this.newProduct)
           let productArray = []
           let querySnapshot = await productCollectionRef.get()
@@ -255,7 +278,8 @@
         this.edittedProduct.price = getData.data().price
         this.edittedProduct.category = getData.data().category
         this.edittedProduct.image = getData.data().image
-        this.img = this.edittedProduct.image
+        this.imgEdit = this.edittedProduct.image
+        this.edittedProduct.isEditting = true
         await productCollectionRef.doc(id).update({
           isEditting: true
         })
@@ -271,6 +295,7 @@
         await productCollectionRef.doc(id).update({
           isEditting: false
         })
+        this.edittedProduct.isEditting = false
         let productArray = []
         let querySnapshot = await productCollectionRef.get()
         querySnapshot.forEach(element => {
@@ -280,7 +305,8 @@
         toastr.success('Cancle edit')
       },
       editProduct: async function (id) {
-        this.edittedProduct.image = await this.upload(this.file[0])
+        if (!this.fileEdit[0]) this.edittedProduct.image = ''
+          else this.edittedProduct.image = await this.upload(this.fileEdit[0])
         await productCollectionRef.doc(id).update(this.edittedProduct)
         let productArray = []
         let querySnapshot = await productCollectionRef.get()
@@ -288,6 +314,7 @@
           productArray.push(element)
         })
         this.products = productArray
+        this.edittedProduct.isEditting = false
         toastr.success('Product was editted')
       },
     },
