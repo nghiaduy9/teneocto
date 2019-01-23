@@ -1,0 +1,1119 @@
+@media (min-width: 768px) {
+  div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  #part1 {
+    background-image: url(https://static.ladipage.net/57b167c9ca57d39c18a1c57c/personal-img1.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    color: aliceblue;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+
+    .heading11 {
+      top: 269px;
+      height: 46px;
+      width: 405px;
+      position: relative;
+
+      h1 {
+        margin-left: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 46px;
+        font-size: 40px;
+        text-align: left;
+      }
+    }
+
+    .heading12 {
+      top: 321px;
+      padding: 0px;
+      width: 558px;
+      height: 66px;
+      position: absolute;
+
+      h1 {
+        margin-left: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 66px;
+        font-size: 60px;
+        text-align: left;
+      }
+    }
+
+    .heading13 {
+      top: 401px;
+      width: 443px;
+      height: 44px;
+      position: absolute;
+      background: black;
+      margin-left: 25px;
+
+      h6 {
+        color: rgb(247, 237, 0);
+        top: 11px;
+        left: 13px;
+        padding: 0px;
+        width: 385px;
+        height: 22px;
+        display: inline;
+        position: absolute;
+      }
+    }
+
+    #img1-size {
+      height: 751px;
+    }
+  }
+
+  #part2 {
+    background-color: #fafafa;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    left: 0px;
+    padding: 0px;
+    position: relative;
+    color: black;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    height: 767px;
+
+    #showImg2 {
+      width: 1110px;
+      height: 767px;
+    }
+
+    #img2 {
+      background-image: url(https://static.ladipage.net/57b167c9ca57d39c18a1c57c/drop2.jpg);
+      background-size: contain;
+      background-attachment: scroll;
+      background-position: right center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 767px;
+      margin: 0px;
+      right: 0px;
+      padding: 0px;
+      position: absolute;
+      display: block;
+      -webkit-font-smoothing: antialiased;
+
+      #showImg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #content1 {
+      z-index: 1;
+      left: 25px;
+      background-size: cover;
+      width: 400px;
+      position: relative;
+
+      #line1 {
+        background-color: crimson;
+        position: absolute;
+        top: 147px;
+        width: 22px;
+        height: 5px;
+        border: 0px;
+        margin: 0px;
+
+        div {
+          border: 0px;
+          margin: 0px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      #content2 {
+        position: relative;
+        top: 130px;
+        width: 373px;
+        left: 30px;
+
+        #aboutme {
+          position: relative;
+        }
+
+        #paragraph1 {
+          p {
+            margin-top: 20px;
+            margin-bottom: 15px;
+          }
+        }
+
+        #name {
+          margin-top: 40px;
+        }
+
+        .line {
+          background-color: darkgray;
+          background-size: cover;
+          width: 400px;
+          height: 1px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+          div {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        button {
+          border-radius: 0;
+          width: 160px;
+          height: 40px;
+          background-color: black;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  #part3 {
+    background-image: url(https://static.ladipage.net/s1440x700/uploads/images/27d90f10-352d-42c0-9680-87ee47ee9933.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 505px;
+    position: relative;
+    float: left;
+
+    .container {
+      height: 505px;
+    }
+
+    #showImg3 {
+      width: 100%;
+      height: 100%;
+    }
+
+    #skill {
+      top: 80px;
+      position: relative;
+      left: 25px;
+      height: 36px;
+
+      #line7 {
+        background-color: crimson;
+        width: 22px;
+        height: 5px;
+        position: relative;
+        top: 25px;
+
+        div {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      #skills {
+        left: 25px;
+        position: relative;
+        font-size: 30px;
+      }
+    }
+
+    #skillDescription {
+      position: relative;
+      width: 980px;
+      height: 300px;
+      top: 120px;
+      left: 40px;
+
+      #photoshop {
+        width: 300px;
+        height: 85px;
+
+        i {
+          float: left;
+          width: 42px;
+          height: 48px;
+        }
+
+        #pts-ct {
+          position: relative;
+          left: 8px;
+          float: left;
+
+          h5 {
+            position: relative;
+            width: 250px;
+            height: 20px;
+          }
+
+          p {
+            width: 250px;
+            height: 57px;
+            position: relative;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      #illustrator {
+        top: -85px;
+        left: 40px;
+        float: left;
+        position: relative;
+        width: 300px;
+        height: 85px;
+
+        .fa-rotate-45 {
+          float: left;
+          width: 42px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+        #ill-ct {
+          position: relative;
+          left: 8px;
+          float: left;
+
+          h5 {
+            position: relative;
+            width: 250px;
+            height: 20px;
+          }
+
+          p {
+            width: 250px;
+            height: 57px;
+            position: relative;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      #html5 {
+        top: -85px;
+        left: 60px;
+        float: left;
+        position: relative;
+        width: 300px;
+        height: 85px;
+
+        i {
+          float: left;
+          width: 42px;
+        }
+
+        #html-ct {
+          position: relative;
+          float: left;
+
+          h5 {
+            position: relative;
+            width: 250px;
+            height: 20px;
+          }
+
+          p {
+            width: 250px;
+            height: 57px;
+            position: relative;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      #dreamweaver {
+        float: left;
+        position: relative;
+        width: 300px;
+        height: 85px;
+
+        i {
+          float: left;
+        }
+
+        #dw-ct {
+          position: relative;
+          float: left;
+          left: 8px;
+
+          h5 {
+            position: relative;
+            width: 250px;
+            height: 20px;
+          }
+
+          p {
+            width: 250px;
+            height: 57px;
+            position: relative;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      #fireworks {
+        float: left;
+        left: 40px;
+        position: relative;
+        width: 300px;
+        height: 85px;
+
+        i {
+          float: left;
+        }
+
+        #fw-ct {
+          position: relative;
+          float: left;
+          left: 8px;
+
+          h5 {
+            position: relative;
+            width: 250px;
+            height: 20px;
+          }
+
+          p {
+            width: 250px;
+            height: 57px;
+            position: relative;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      #css3 {
+        float: left;
+        left: 60px;
+        position: relative;
+        width: 300px;
+        height: 85px;
+
+        i {
+          float: left;
+        }
+
+        #css-ct {
+          position: relative;
+          float: left;
+          left: 8px;
+
+          h5 {
+            position: relative;
+            width: 250px;
+            height: 20px;
+          }
+
+          p {
+            width: 250px;
+            height: 57px;
+            position: relative;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
+  }
+
+  #part4 {
+    background-color: #ffd800;
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    float: left;
+
+    #achievement {
+      position: relative;
+      top: 100px;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+
+      h2 {
+        font-weight: bold;
+      }
+
+      #khachhang {
+        position: relative;
+        margin-left: 50px;
+        float: left;
+        width: 180px;
+        text-align: center;
+
+      }
+
+      #duan1 {
+        position: relative;
+        margin-left: 50px;
+        width: 180px;
+        text-align: center;
+        float: left;
+      }
+
+      #duan2 {
+        position: relative;
+        margin-left: 50px;
+        width: 180px;
+        text-align: center;
+        float: left;
+      }
+
+      #doitac {
+        position: relative;
+        margin-left: 50px;
+        width: 180px;
+        text-align: center;
+        float: left;
+      }
+    }
+
+    #showImg4 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #part5 {
+    background-image: url(https://static.ladipage.net/57b167c9ca57d39c18a1c57c/personal-img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 642px;
+    width: 100%;
+    padding: 0;
+    float: left;
+
+    .container {
+      padding: 0;
+      height: 0;
+      ;
+    }
+
+    #education {
+      position: relative;
+      top: 133px;
+      width: 627px;
+      height: 0;
+
+      #line8 {
+        float: left;
+        position: relative;
+        width: 22px;
+        background-color: rgba(239, 16, 110, 1);
+        background-size: cover;
+
+        div {
+          position: relative;
+          top: 8.5px;
+          width: 100%;
+          height: 4px;
+        }
+      }
+
+      #edu-content {
+        position: relative;
+        top: -25px;
+
+        #head-ct {
+          position: relative;
+          left: 5px;
+          width: 600px;
+          height: 129px;
+          float: left;
+
+          h1 {
+            font-weight: bold;
+          }
+
+          p {
+            margin-top: 20px;
+            font-weight: lighter;
+          }
+        }
+
+        #line9 {
+          position: relative;
+          left: 27px;
+          top: 30px;
+          float: left;
+          background-color: rgba(207, 207, 207, 1);
+          background-size: cover;
+          width: 600px;
+          height: 1px;
+
+          div {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .body-ct {
+          margin-top: 50px;
+          position: relative;
+          left: 27px;
+          top: 20px;
+          float: left;
+          width: 500px;
+          height: 72px;
+
+          .headline h1 {
+            width: 61px;
+            height: 50px;
+            float: left;
+          }
+
+          .ct p {
+            line-height: 23px;
+          }
+        }
+      }
+    }
+
+    #showImg5 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #part6 {
+    .container {
+      height: 0;
+    }
+
+    background-color: rgba(242, 242, 242, 1);
+    background-size: cover;
+    float: left;
+    width: 100%;
+    height: 396px;
+
+    #showImg6 {
+      width: 100%;
+      height: 100%;
+    }
+
+    #headline6 {
+      position: relative;
+      top: 74px;
+      width: 250px;
+      height: 36px;
+
+      #line10 {
+        position: relative;
+        width: 22px;
+        height: 4px;
+        float: left;
+        top: 25px;
+        background-color: crimson;
+
+        div {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      #edu {
+        position: relative;
+        width: 200px;
+        height: 100%;
+        float: left;
+      }
+    }
+
+    #content6 {
+      width: 100%;
+      height: 231px;
+      text-align: center;
+      position: relative;
+      top: 140px;
+
+      .p6-ct {
+        height: 100%;
+        width: 224px;
+        float: left;
+        text-align: left;
+        position: relative;
+        margin-right: 5px;
+
+        .header6 {
+          width: 100%;
+          height: 44px;
+          float: left;
+        }
+
+        .timeline6 {
+          position: relative;
+          top: 40px;
+          float: left;
+
+          .box6 {
+            position: relative;
+            text-align: center;
+            background-color: black;
+            background-size: cover;
+            width: 93px;
+            height: 30px;
+            text-align: center;
+            float: left;
+
+            p {
+              float: left;
+              top: 3px;
+              border: 0;
+              margin: auto;
+              width: 100%;
+              position: absolute;
+              height: 100%;
+              color: #fafafa;
+              text-align: center;
+            }
+          }
+
+          .line11 {
+            float: left;
+            width: 131px;
+            background-color: black;
+            background-size: cover;
+            height: 1px;
+            position: relative;
+            top: 15px;
+
+            div {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .ct6 {
+          position: relative;
+          width: 100%;
+          height: 57px;
+          float: left;
+          top: 40px;
+
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  #part7 {
+    .container {
+      height: 0;
+    }
+
+    background-image: url(https://static.ladipage.net/57b167c9ca57d39c18a1c57c/personal-img4.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 527px;
+    float: left;
+    position: relative;
+
+    #headline7 {
+      width: 553px;
+      height: 81px;
+      position: relative;
+      top: 149px;
+      left: 557px;
+      float: left;
+
+      p {
+        width: 100%;
+        height: 100%;
+        color: #fafafa;
+        font-size: 22px;
+      }
+    }
+
+    #line12 {
+      background-color: #fafafa;
+      background-size: cover;
+      width: 555px;
+      height: 1px;
+      position: relative;
+      top: 280px;
+      left: 556px;
+
+      div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    #content7 {
+      width: 530px;
+      height: 61px;
+      position: relative;
+      top: 340px;
+      float: left;
+
+      .ct {
+        width: 259px;
+        height: 61px;
+        float: left;
+
+        .number {
+          float: left;
+          width: 73px;
+          height: 61px;
+          color: black;
+
+          h1 {
+            position: relative;
+            top: -15px;
+            font-size: 60px;
+          }
+        }
+
+        .text {
+          position: relative;
+          color: #fafafa;
+        }
+      }
+    }
+
+    #showImg7 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #part8 {
+    background-color: #fafafa;
+    background-size: cover;
+    width: 100%;
+    height: 829px;
+    float: left;
+    text-align: center;
+
+    #headline8 {
+      position: relative;
+      top: 88px;
+      width: 230px;
+      height: 36px;
+      float: left;
+
+      #line13 {
+        position: relative;
+        top: 22px;
+        background-color: darkmagenta;
+        width: 22px;
+        height: 4px;
+        background-size: cover;
+        float: left;
+
+        div {
+          width: 100%;
+          height: 4px;
+        }
+      }
+
+      #port {
+        float: left;
+        position: relative;
+        left: 30px;
+      }
+    }
+
+    #port-img {
+      width: 100%;
+      position: relative;
+      top: 100px;
+      height: 600px;
+      text-align: center;
+      float: left;
+
+      img {
+        float: left;
+        width: 515px;
+        height: 300px;
+        margin: 20px;
+      }
+    }
+
+    #showImg8 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #part9 {
+    background-color: rgba(224, 224, 224, 0.61);
+    background-size: cover;
+    width: 100%;
+    height: 764px;
+    float: left;
+    text-align: center;
+
+    #headline9 {
+      position: relative;
+      top: 88px;
+      width: 515px;
+      height: 36px;
+      float: left;
+
+      #line14 {
+        position: relative;
+        top: 22px;
+        background-color: darkmagenta;
+        width: 22px;
+        height: 4px;
+        background-size: cover;
+        float: left;
+
+        div {
+          width: 100%;
+          height: 4px;
+        }
+      }
+
+      #certificate {
+        float: left;
+        position: relative;
+        left: 0px;
+      }
+    }
+
+    #content9 {
+      width: 100%;
+      height: 100%;
+      float: left;
+      position: relative;
+      top: 100px;
+
+      .certificate {
+        width: 370px;
+        height: 287px;
+        position: relative;
+        float: left;
+        text-align: left;
+      }
+
+      #cer1 {
+        background-color: #ffd800;
+        background-size: cover;
+
+        .cer-box {
+          width: 340px;
+          height: 257px;
+          border-color: #fafafa;
+          border-width: 5px;
+          border-style: solid;
+          margin: 15px;
+          padding: 20px;
+
+          h5,
+          h6 {
+            font-weight: bold;
+          }
+        }
+      }
+
+      #cer2 {
+        background-color: none;
+        background-size: cover;
+
+        .cer-box {
+          width: 340px;
+          height: 257px;
+          border-color: #fafafa;
+          border-width: 5px;
+          border-style: solid;
+          margin: 15px;
+          padding: 20px;
+
+          h5,
+          h6 {
+            font-weight: bold;
+          }
+        }
+      }
+
+      #cer3 {
+        background-color: #ffd800;
+        background-size: cover;
+
+        .cer-box {
+          width: 340px;
+          height: 257px;
+          border-color: #fafafa;
+          border-width: 5px;
+          border-style: solid;
+          margin: 15px;
+          padding: 20px;
+
+          h5,
+          h6 {
+            font-weight: bold;
+          }
+        }
+      }
+
+      #cer4 {
+        background-color: none;
+        background-size: cover;
+
+        .cer-box {
+          width: 340px;
+          height: 257px;
+          border-color: rgba(199, 199, 199, 0.82);
+          border-width: 5px;
+          border-style: solid;
+          margin: 15px;
+          padding: 20px;
+
+          h5,
+          h6 {
+            font-weight: bold;
+          }
+        }
+      }
+
+      #cer5 {
+        background-color: rgba(239, 16, 110, 1);
+        background-size: cover;
+
+        .cer-box {
+          width: 340px;
+          height: 257px;
+          border-color: #fafafa;
+          border-width: 5px;
+          border-style: solid;
+          margin: 15px;
+          padding: 20px;
+
+          h5,
+          h6 {
+            font-weight: bold;
+          }
+        }
+      }
+
+      #cer6 {
+        background-color: none;
+        background-size: cover;
+
+        .cer-box {
+          width: 340px;
+          height: 257px;
+          border-color: rgba(199, 199, 199, 0.82);
+          border-width: 5px;
+          border-style: solid;
+          margin: 15px;
+          padding: 20px;
+
+          h5,
+          h6 {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    #showImg9 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #part10 {
+    background-image: url(https://static.ladipage.net/uploads/images/c0315875-a00f-4b93-afbb-0af40a863451.png);
+    background-size: cover;
+    width: 100%;
+    height: 552px;
+    float: left;
+
+    #headline10 {
+      position: relative;
+      top: 88px;
+      width: 370px;
+      height: 464px;
+      float: left;
+
+      #line15 {
+        position: relative;
+        top: 22px;
+        background-color: darkmagenta;
+        width: 22px;
+        height: 4px;
+        background-size: cover;
+        float: left;
+
+        div {
+          width: 100%;
+          height: 4px;
+        }
+      }
+
+      #contact {
+        float: left;
+        position: relative;
+      }
+    }
+
+    #content-contact {
+      width: 650px;
+      height: 452px;
+      position: relative;
+      top: 100px;
+      left: 50px;
+      float: left;
+      color: rgba(239, 16, 110, 1);
+
+      h5 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      #line16 {
+        height: 1px;
+        width: 100%;
+        background-color: rgba(239, 16, 110, 1);
+        background-size: cover;
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+
+      .form-control {
+        border-color: rgba(239, 16, 110, 1);
+        border-width: 1px;
+        border-style: solid;
+        margin: 10px;
+        margin-left: 0;
+      }
+    }
+
+    #showImg10 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
